@@ -1,0 +1,5 @@
+com/piedraazul/appointment/controller/AppointmentController.class
+com/piedraazul/appointment/repository/AppointmentRepository.class
+com/piedraazul/appointment/AppointmentApplication.class
+com/piedraazul/appointment/model/Appointment.class
+com/piedraazul/appointment/service/AppointmentService.class

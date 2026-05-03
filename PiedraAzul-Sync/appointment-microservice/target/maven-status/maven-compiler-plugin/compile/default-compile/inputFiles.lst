@@ -1,0 +1,5 @@
+/home/juan/repos/microservices/master/PiedraAzul-Sync/appointment-microservice/src/main/java/com/piedraazul/appointment/AppointmentApplication.java
+/home/juan/repos/microservices/master/PiedraAzul-Sync/appointment-microservice/src/main/java/com/piedraazul/appointment/controller/AppointmentController.java
+/home/juan/repos/microservices/master/PiedraAzul-Sync/appointment-microservice/src/main/java/com/piedraazul/appointment/model/Appointment.java
+/home/juan/repos/microservices/master/PiedraAzul-Sync/appointment-microservice/src/main/java/com/piedraazul/appointment/repository/AppointmentRepository.java
+/home/juan/repos/microservices/master/PiedraAzul-Sync/appointment-microservice/src/main/java/com/piedraazul/appointment/service/AppointmentService.java

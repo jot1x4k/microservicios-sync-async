@@ -1,0 +1,4 @@
+com/piedraazul/audit/listener/AuditListener.class
+com/piedraazul/audit/AuditApplication.class
+com/piedraazul/audit/model/AuditLog.class
+com/piedraazul/audit/repository/AuditLogRepository.class

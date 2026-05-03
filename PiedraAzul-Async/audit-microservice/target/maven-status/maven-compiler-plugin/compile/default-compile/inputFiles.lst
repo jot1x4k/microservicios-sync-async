@@ -1,0 +1,4 @@
+/home/juan/repos/microservices/master/PiedraAzul-Async/audit-microservice/src/main/java/com/piedraazul/audit/AuditApplication.java
+/home/juan/repos/microservices/master/PiedraAzul-Async/audit-microservice/src/main/java/com/piedraazul/audit/listener/AuditListener.java
+/home/juan/repos/microservices/master/PiedraAzul-Async/audit-microservice/src/main/java/com/piedraazul/audit/model/AuditLog.java
+/home/juan/repos/microservices/master/PiedraAzul-Async/audit-microservice/src/main/java/com/piedraazul/audit/repository/AuditLogRepository.java
