@@ -1,0 +1,84 @@
+{
+  "info": {
+    "_postman_id": "b9ef709b-934b-45c0-b043-eb5d7008f55b",
+    "name": "bookings-gym-async",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "34023764"
+  },
+  "item": [
+    {
+      "name": "add booking",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n \"userId\":3,\n \"gymClassId\":1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8081/api/bookings/booking",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "bookings", "booking"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get usuarios publicador - Information",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/information/users",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "information", "users"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get usuarios consumidor - Booking",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8081/api/bookings/users",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "bookings", "users"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add user publicador",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n \"id\": 3,\n \"firstName\": \"Angelita\",\n \"lastName\": \"Herrera\",\n \"facilityId\":1 \n }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/information/users",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "information", "users"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
