@@ -1,81 +1,57 @@
 {
   "info": {
     "_postman_id": "d6f00ff3-e8b0-4450-b0fa-ad471c661bba",
-    "name": "bookings-gym-sync",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "34023764"
+    "name": "PiedraAzul-Sync-Appointments",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
-      "name": "get booking",
+      "name": "Agendar Cita",
       "request": {
-        "method": "GET",
-        "header": [],
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"patientId\": 1,\n  \"professionalId\": 2,\n  \"appointmentTime\": \"2026-05-10T10:00:00\"\n}"
+        },
         "url": {
-          "raw": "localhost:8080/api/bookings/booking/",
-          "host": ["localhost"],
+          "raw": "http://localhost:8080/api/appointments",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
           "port": "8080",
-          "path": ["api", "bookings", "booking", ""]
+          "path": [
+            "api",
+            "appointments"
+          ]
         }
       },
       "response": []
     },
     {
-      "name": "add booking",
+      "name": "Cancelar Cita",
       "request": {
         "method": "POST",
         "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n \"userId\":3,\n \"gymClassId\":1\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
         "url": {
-          "raw": "localhost:8080/api/bookings/booking",
-          "host": ["localhost"],
+          "raw": "http://localhost:8080/api/appointments/1/cancel",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
           "port": "8080",
-          "path": ["api", "bookings", "booking"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "get usuarios",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8081/api/information/users",
-          "host": ["localhost"],
-          "port": "8081",
-          "path": ["api", "information", "users"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "add usuario",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n \"id\":3,\n \"firstName\":\"Michael\",\n \"lastName\":\"Jackson\",\n \"facilityId\":1\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "localhost:8081/api/information/users",
-          "host": ["localhost"],
-          "port": "8081",
-          "path": ["api", "information", "users"]
+          "path": [
+            "api",
+            "appointments",
+            "1",
+            "cancel"
+          ]
         }
       },
       "response": []
